@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AK Adventures - Journey to the Top of the World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-mountain"></i>
+                AK Adventures
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <a href="#" class="cta-button" onclick="openBookingPopup()">Book Now</a>
+            
+            <!-- Mobile Navigation -->
+            <div class="nav-mobile">
+                <a href="#home">Home</a>
+                <a href="#packages">Packages</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#blog">Blog</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Conquer Everest</h1>
+            <p>Experience the ultimate adventure in the heart of the Himalayas. Journey to the roof of the world with expert guides and breathtaking views.</p>
+            <div class="hero-buttons">
+                <a href="#packages" class="btn-primary">Explore Packages</a>
+                <a href="#about" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose AK Adventures</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-mountain feature-icon"></i>
+                    <h3>Expert Sherpa Guides</h3>
+                    <p>Our certified Sherpa guides have decades of experience navigating the Himalayas, ensuring your safety and success on every expedition.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>Safety First</h3>
+                    <p>We prioritize your safety with top-tier equipment, comprehensive training, and proven safety protocols developed over years of mountain expertise.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gem feature-icon"></i>
+                    <h3>Premium Experience</h3>
+                    <p>From luxury base camps to helicopter transfers, we provide premium amenities that make your Everest journey comfortable and unforgettable.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="packages" id="packages">
+        <div class="container">
+            <h2 class="section-title">Featured Adventure Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <div class="package-badge">Popular</div>
+                    <div class="package-image">
+                        <img src="https://i.natgeofe.com/n/2dc54f0a-0786-4593-86b3-fd06a50d1851/everest-basecamp-life-er-camp.jpg" alt="Everest Base Camp">
+                    </div>
+                    <div class="package-content">
+                        <div class="package-price">$2,999</div>
+                        <div class="package-title">Everest Base Camp Trek</div>
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> 14 days guided trek</li>
+                            <li><i class="fas fa-check"></i> All meals included</li>
+                            <li><i class="fas fa-check"></i> Professional pilot</li>
+                            <li><i class="fas fa-check"></i> Luxury experience</li>
+                        </ul>
+                        <button class="package-btn" onclick="openBookingPopup('Everest Helicopter Tour')">Book This Package</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Adventurers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The Everest Base Camp trek was absolutely life-changing! The guides were incredibly knowledgeable and made sure we were safe every step of the way. The views were beyond anything I could have imagined."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="John Smith" class="author-avatar">
+                        <div class="author-info">
+                            <h4>John Smith</h4>
+                            <p>Adventure Photographer, USA</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "Amazing experience with Everest Adventures! The Annapurna Circuit was perfectly organized. Great food, comfortable lodges, and our guide Pemba was fantastic. Highly recommended!"
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108755-2616b612b5bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Sarah Johnson</h4>
+                            <p>Travel Blogger, UK</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The helicopter tour to Everest was incredible! Professional service, stunning views, and breakfast at base camp was surreal. Worth every penny for this once-in-a-lifetime experience."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=150&q=80" alt="Michael Chen" class="author-avatar">
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <p>Business Executive, Singapore</p>
+                        </div>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Adventures & Tips</h2>
+            <div class="blog-grid">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Everest Training">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> March 15, 2025</span>
+                            <span><i class="fas fa-user"></i> Tenzing Sherpa</span>
+                        </div>
+                        <h3 class="blog-title">Essential Training Tips for Everest Base Camp</h3>
+                        <p class="blog-excerpt">Preparing for the Everest Base Camp trek requires months of physical and mental preparation. Here's our comprehensive guide to get you ready...</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://www.coretreks.com/wp-content/uploads/2024/07/upper-mustang-overland-tour-with-tiji-festival-in-nepal-1576235184-1024x420.jpg" alt="Sherpa Culture">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> March 10, 2025</span>
+                            <span><i class="fas fa-user"></i> Ang Dorje</span>
+                        </div>
+                        <h3 class="blog-title">Understanding Sherpa Culture and Traditions</h3>
+                        <p class="blog-excerpt">Learn about the rich culture and traditions of the Sherpa people who call the Himalayas home. Discover their customs, beliefs, and way of life...</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://taleof2backpackers.com/wp-content/uploads/2017/05/The-Ultimate-Hiking-Packing-List-for-Himalayan-Treks-1.jpg" alt="Gear Guide">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> March 5, 2025</span>
+                            <span><i class="fas fa-user"></i> Lisa Thompson</span>
+                        </div>
+                        <h3 class="blog-title">Ultimate Gear Guide for Himalayan Trekking</h3>
+                        <p class="blog-excerpt">Having the right gear can make or break your Himalayan adventure. Our experts share the essential equipment you need for a successful trek...</p>
+                        <a href="#" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Successful Expeditions</p>
+                </div>
+                <div class="stat-item">
+                    <h3>15+</h3>
+                    <p>Years of Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3>98%</h3>
+                    <p>Success Rate</p>
+                </div>
+                <div class="stat-item">
+                    <h3>2000+</h3>
+                    <p>Happy Adventurers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Everest Adventures</h3>
+                    <p>Your gateway to the majestic Himalayas. We've been guiding adventurers to the top of the world for over 15 years with unmatched expertise and safety.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Popular Packages</h3>
+                    <ul>
+                        <li><a href="#">Everest Base Camp Trek</a></li>
+                        <li><a href="#">Annapurna Circuit</a></li>
+                        <li><a href="#">Everest Helicopter Tour</a></li>
+                        <li><a href="#">Langtang Valley Trek</a></li>
+                        <li><a href="#">Manaslu Circuit</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#packages">Packages</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#testimonials">Reviews</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Thamel, Kathmandu, Nepal</p>
+                    <p><i class="fas fa-phone"></i> +977-1-4123456</p>
+                    <p><i class="fas fa-envelope"></i> info@everestadventures.com</p>
+                    <p><i class="fas fa-clock"></i> 24/7 Emergency Support</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Everest Adventures. All rights reserved. | Licensed by Nepal Tourism Board | Reg. No. 12345/067/068</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Booking Popup -->
+    <div class="booking-overlay" id="bookingOverlay">
+        <div class="booking-popup">
+            <button class="close-popup" onclick="closeBookingPopup()">
+                <i class="fas fa-times"></i>
+            </button>
+            <form class="booking-form" onsubmit="handleBookingSubmit(event)">
+                <h3>Book Your Adventure</h3>
+                
+                <div class="form-group">
+                    <label for="package">Selected Package</label>
+                    <select id="package" name="package" required>
+                        <option value="">Choose a package</option>
+                        <option value="everest-base-camp">Everest Base Camp Trek - $2,999</option>
+                        <option value="annapurna-circuit">Annapurna Circuit Adventure - $1,899</option>
+                        <option value="everest-helicopter">Everest Helicopter Tour - $4,999</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="travelDate">Preferred Travel Date</label>
+                        <input type="date" id="travelDate" name="travelDate" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="groupSize">Group Size</label>
+                        <select id="groupSize" name="groupSize" required>
+                            <option value="">Select size</option>
+                            <option value="1">Solo (1 person)</option>
+                            <option value="2">Couple (2 people)</option>
+                            <option value="3-5">Small group (3-5 people)</option>
+                            <option value="6+">Large group (6+ people)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Trekking Experience</label>
+                    <select id="experience" name="experience" required>
+                        <option value="">Select experience level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                        <option value="expert">Expert</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="specialRequests">Special Requests or Medical Conditions</label>
+                    <textarea id="specialRequests" name="specialRequests" rows="3" placeholder="Please mention any dietary requirements, medical conditions, or special requests..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                    <i class="fas fa-paper-plane"></i> Submit Booking Request
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
